@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  Crie cinco objetos JavaScript dentro de um Array contendo
+nome(texto), idade(número), skills (array), ou seja um total de cinco
+
+alunos. Agora crie uma função que receba estes cinco objetos e
+mais um parâmetro skill. Dependendo da skill enviada mostrar no
+console.log(), quais alunos têm a skill enviada por parâmetro,
+mostrar todo o objeto.
+Exemplo: Pedro, 24, [JavaScript, TypeScript, React]. Se mandar
+chamar a função enviando (alunos, “JavaScript”), precisa mostrar o
+Pedro e qual mais se encaixa nessa skill.
+
+*/
+
+
+const alunos = [  {    nome: 'Pedro',    idade: 24,    skills: ['JavaScript', 'TypeScript', 'React']
+  },
+  {
+    nome: 'Mariana',
+    idade: 22,
+    skills: ['JavaScript', 'React', 'Node.js']
+  },
+  {
+    nome: 'Carlos',
+    idade: 26,
+    skills: ['JavaScript', 'PHP', 'Laravel']
+  },
+  {
+    nome: 'Ana',
+    idade: 20,
+    skills: ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    nome: 'Lucas',
+    idade: 25,
+    skills: ['JavaScript', 'React', 'Redux']
+  }
+];
+
+function mostrarAlunosComSkill(alunos, skill) {
+  alunos.forEach(aluno => {
+    if (aluno.skills.includes(skill)) {
+      console.log(aluno);
+    }
+  });
+}
+
+mostrarAlunosComSkill(alunos, 'CSS')
+
+    </script>
+</body>
+</html>
